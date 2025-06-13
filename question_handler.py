@@ -3,23 +3,14 @@
 """
 Question Handler Module
 
-This module holds 12 questions for the call workflow. Each question is defined with an ID (Q1 to Q12).
-Fill in the actual question text later.
+This module holds 3 sample questions for testing the call workflow.
+Each question is defined with an ID (Q1 to Q3).
 """
 
 QUESTIONS = {
-    "Q1": "",   # TODO: Enter question text for Q1
-    "Q2": "",   # TODO: Enter question text for Q2
-    "Q3": "",   # TODO: Enter question text for Q3
-    "Q4": "",   # TODO: Enter question text for Q4
-    "Q5": "",   # TODO: Enter question text for Q5
-    "Q6": "",   # TODO: Enter question text for Q6
-    "Q7": "",   # TODO: Enter question text for Q7
-    "Q8": "",   # TODO: Enter question text for Q8
-    "Q9": "",   # TODO: Enter question text for Q9
-    "Q10": "",  # TODO: Enter question text for Q10
-    "Q11": "",  # TODO: Enter question text for Q11
-    "Q12": ""   # TODO: Enter question text for Q12
+    "Q1": "Do you own a vehicle?",
+    "Q2": "What is the make or brand of your vehicle?",
+    "Q3": "What is the manufacturing year of your vehicle?"
 }
 
 def get_question(question_id: str) -> str:

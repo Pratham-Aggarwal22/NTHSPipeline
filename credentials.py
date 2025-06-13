@@ -2,20 +2,21 @@
 import os
 
 # Google Speech-to-Text API Credentials (point to your JSON key file)
-GOOGLE_SPEECH_CREDENTIALS = os.getenv("GOOGLE_SPEECH_CREDENTIALS", "path/to/google_credentials.json")
+GOOGLE_SPEECH_CREDENTIALS = os.getenv("GOOGLE_SPEECH_CREDENTIALS", "json file here")
 
-# Hugging Face API Token (for your LLM integration)
-HUGGINGFACE_TOKEN = os.getenv("HUGGINGFACE_TOKEN", "your_huggingface_token_here")
+# OpenAI API Key
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "**********")
 
 # MongoDB URI for database connectivity
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/your_database")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongo url here")
 
 # Get Twilio credentials from environment variables (or add them to credentials.py as needed)
-TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID", "your_twilio_sid")
-TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN", "your_twilio_auth_token")
-TWILIO_CALLER_NUMBER = os.getenv("TWILIO_CALLER_NUMBER", "+10000000000")
+TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID", "*****")
+TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN", "*****")
+TWILIO_CALLER_NUMBER = os.getenv("TWILIO_CALLER_NUMBER", "+1234567890")  # Replace with your Twilio number
+
 # BASE_URL should point to your publicly accessible server (e.g., using ngrok during development)
-BASE_URL = os.getenv("BASE_URL", "http://your_public_domain.com")
+BASE_URL = os.getenv("BASE_URL", "base url here")
 
 # Additional imports you might need:
 # import pymongo
